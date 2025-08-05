@@ -349,7 +349,7 @@ class JupiterAIAssistant:
     
     def render_quick_questions(self):
         """Render quick question buttons - UPDATED to actually work"""
-        st.subheader("💡 Quick Questions - Click to Get Answers!")
+        st.subheader("💡 Quick Questions")
         
         questions = get_jupiter_quick_questions()
         
@@ -610,6 +610,28 @@ class JupiterAIAssistant:
         <div style='text-align: center; color: gray; padding: 1rem;'>
             <p>🤖 Jupiter AI Assistant | Powered by RAG + OpenAI GPT</p>
             <p>Ask me anything about Jupiter's financial services!</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # Contact Links with Icons
+        st.markdown("""
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin: 20px 0; padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px;">
+        <a href="https://www.linkedin.com/in/jai-chaudhary-54bb86221/" target="_blank" style="text-decoration: none;">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="32" height="32" style="filter: brightness(0) invert(1); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"/>
+        </a>
+        <a href="https://github.com/jcb03/" target="_blank" style="text-decoration: none;">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="32" height="32" style="filter: brightness(0) invert(1); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"/>
+        </a>
+        <span style="color: white; font-weight: 500; font-size: 16px;">
+            📧 Contact: <a href="mailto:jaichaudhary0303@gmail.com" style="color: #f8f9fa; text-decoration: underline;">jaichaudhary0303@gmail.com</a>
+            </span>
+        </div>
+        """, unsafe_allow_html=True)
+    
+        # Attribution
+        st.markdown("""
+        <div style='text-align: center; color: #6c757d; padding: 10px; font-size: 14px;'>
+        <p>💻 Developed by <strong>Jai Chaudhary</strong> </p>
         </div>
         """, unsafe_allow_html=True)
     
