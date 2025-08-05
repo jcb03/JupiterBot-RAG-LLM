@@ -19,3 +19,4 @@ python-dotenv
 torch
 torchvision
 torchaudio
+pysqlite3-binary
